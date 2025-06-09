@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web sobre videojuegos para estudiantes UVM">
+    <meta name="keywords" content="videojuegos, gaming, juegos, reseñas, noticias, UVM">
+    <title>UVM GameZone - Portal para gamers uvemistas</title>
+</head>
+<body>
+    <header>
+        <h1>UVM GameZone</h1>
+        <p>El mejor sitio para Uvemistas gamers</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="conceptos.html">Conceptos HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Últimos Lanzamientos</h2>
+            <article>
+                <h3>Make It Meme</h3>
+                <img src="https://colyseus.io/_astro/make-it-meme-screenshot.2b2994a9_Vp6zb.webp" alt="Captura de Make It Meme" width="400">
+                <p>El divertido juego de crear memes con amigos <strong>Make It Meme</strong> ya está disponible en el laboratorio.</p>
+                <p>Fecha de lanzamiento: <time datetime="2025-07-09">9 de Julio 2025</time></p>
+                <a href="detalle_make_it_meme.html">Leer más...</a>
+            </article>
+
+            <article>
+                <h3>Gartic Phone: La nueva sensación</h3>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/9rDGqneHgy0?si=9b_Izi4T-Y14ElGK" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                <p>El caótico y divertido <em>Gartic Phone</em> se vuelve viral entre ingenieros de computación.</p>
+                <a href="detalle_gartic_phone.html">Ver detalles</a>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <h2>Noticias Recientes</h2>
+            <article>
+                <h3>Genesis Order Rompe el Internet</h3>
+                <p>El Nuevo Juego vuelve Locos a los estudiantes de Frontend 1.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>Se espera que tenga gráficos 4K y retrocompatibilidad.</p>
+                </details>
+            </article>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Puntuación</th>
+                        <th>Plataforma</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Make It Meme</td>
+                        <td>8.5/10</td>
+                        <td>PC, Móvil</td>
+                    </tr>
+                    <tr>
+                        <td>Gartic Phone</td>
+                        <td>9/10</td>
+                        <td>PC, Navegador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Top 3 Juegos del Mes</h3>
+        <ol>
+            <li>Make It Meme</li>
+            <li>Gartic Phone</li>
+            <li>Genesis Order</li>
+        </ol>
+    </aside>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 UVM GameZone. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="mailto:uvmgame@gmail.com">uvmgame@gmail.com</a>
+        </address>
+        <p>Desarrollado por: [Nelson Peña]</p>
+    </footer>
+</body>
+</html>
